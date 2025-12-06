@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { supabase } from "../supabaseClient";
 import TaskItem from "./TaskItem";
+import "../styles/TaskList.css";
 
 export default function TaskList() {
   const [tasks, setTasks] = useState([]);
@@ -76,7 +77,7 @@ export default function TaskList() {
   }, []);
 
   return (
-    <div>
+    <div className="task-list-items">
       {tasks.map((task) => (
         <TaskItem
           key={task.id}

@@ -1,0 +1,17 @@
+.task-list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;      /* allows cards to wrap to new rows */
+  gap: 10rem;            /* space between cards */
+  justify-content: flex-start; /* center them horizontally */
+}
+
+.task-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%
+}

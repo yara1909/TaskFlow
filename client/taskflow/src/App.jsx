@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import AddTask from "./components/AddTask";
 import TaskList from "./components/TaskList";
 import axios from "axios";
+import "./App.css";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -20,8 +21,8 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>TaskFlow</h1>
+    <div className="app-container">
+      <h1 >TaskFlow</h1>
       <AddTask onTaskAdded={handleTaskAdded} />
       <TaskList tasks={tasks} />
     </div>

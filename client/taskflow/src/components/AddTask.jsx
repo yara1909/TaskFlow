@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import "../styles/AddTask.css";
 
 export default function AddTask() {
   const [title, setTitle] = useState("");
